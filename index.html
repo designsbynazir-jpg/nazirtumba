@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula 1 Australian Grand Prix 2026</title>
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b12;
+    color:white;
+    line-height:1.6;
+}
+
+h1,h2{
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ---------- HEADER (poster container) ---------- */
+
+header{
+    padding:0;
+}
+
+/* ---------- POSTER HEADER ---------- */
+
+.poster-header{
+    width:100%;
+    overflow:hidden;
+}
+
+.poster-header img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.about p{
+    font-size:clamp(16px,2vw,18px);
+}
+
+/* ---------- INFO SECTIONS ---------- */
+
+.info-section{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.info-text{
+    flex:1;
+    min-width:280px;
+}
+
+.info-text h2{
+    color:#e10600;
+    font-size:clamp(22px,3vw,32px);
+}
+
+.info-text p{
+    font-size:clamp(15px,2vw,18px);
+}
+
+.info-image{
+    flex:1;
+    min-width:280px;
+    text-align:center;
+}
+
+.info-image img{
+    width:100%;
+    max-width:450px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ---------- FORM ---------- */
+
+.form-section{
+    background:#11111a;
+    border-top:3px solid #e10600;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+input, select, textarea{
+    padding:12px;
+    border-radius:6px;
+    border:none;
+    font-size:16px;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+button{
+    background:#e10600;
+    color:white;
+    border:none;
+    padding:14px;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff2a23;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:768px){
+
+    section{
+        padding:50px 15px;
+    }
+
+    .info-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="poster-header">
+    <img src="f1-main.png" alt="F1 Australian Grand Prix Poster">
+</header>
+
+<section class="about container">
+    <h2>About The Event</h2>
+    <p>
+        The Formula 1 Australian Grand Prix returns to Melbourne from March 5th to 8th 2026.
+        As the season opener, this iconic race brings world-class drivers,
+        thrilling speed, and passionate fans together at Albert Park Circuit
+        for one unforgettable motorsport weekend.
+    </p>
+</section>
+
+<!-- TRACK SECTION -->
+<section class="container info-section">
+    <div class="info-text">
+        <h2>The Albert Park Circuit</h2>
+        <p>
+            The Albert Park Circuit combines high-speed straights,
+            technical corners, and beautiful lakeside scenery.
+            Its semi-street design produces dramatic overtakes and
+            unpredictable racing moments every season.
+        </p>
+        <p>
+            With tight braking zones and fast flowing sectors,
+            the track delivers one of the most exciting race starts
+            on the Formula 1 calendar.
+        </p>
+    </div>
+
+    <div class="info-image">
+        <img src="track.jpg" alt="Albert Park Track Layout">
+    </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section class="container info-section">
+    <div class="info-text">
+        <h2>World-Class Fan Experience</h2>
+        <p>
+            Beyond the racing, fans enjoy live concerts, driver appearances,
+            interactive fan zones, and premium hospitality lounges.
+        </p>
+        <p>
+            From grandstand views to VIP suites, Melbourne offers one of the
+            best atmospheres in global motorsport.
+        </p>
+    </div>
+
+    <div class="info-image">
+        <img src="crowd.jpg" alt="F1 Crowd">
+    </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+    <div class="container">
+        <h2 style="text-align:center">Request Information</h2>
+
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+
+            <select required>
+                <option value="">Favourite Team</option>
+                <option>Red Bull Racing</option>
+                <option>Ferrari</option>
+                <option>Mercedes</option>
+                <option>McLaren</option>
+                <option>Aston Martin</option>
+                <option>Alpine</option>
+                <option>Williams</option>
+                <option>RB (Visa Cash App RB)</option>
+                <option>Cadillac</option>
+                <option>Haas</option>
+                <option>Audi</option>
+            </select>
+
+            <input type="number" placeholder="Number of People" required>
+
+            <textarea placeholder="Comments"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
